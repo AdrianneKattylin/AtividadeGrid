@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 02</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "a a a a b b"
+            "c c d d b b ";
+            grid-template-columns: 20vw 10vw;
+            grid-template-rows: repeat(3, 30vh);
+            gap: 25px;
+        }
+
+        .container div{
+            background-color: #302f2f;
+            color: #f0f8ff;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 3em;
+        }
+
+        .a{
+            grid-area: a;
+        }
+
+        .b{
+            grid-area: b;
+        }
+        
+        .c{
+            grid-area: c;
+        }
+
+        .d{
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+    </div> 
+</body>
+</html>
