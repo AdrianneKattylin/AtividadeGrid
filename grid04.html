@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 04</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 15px;
+        }
+
+        .container div{
+            padding: 10px;
+            font-size: 2em;
+            border-radius: 10px;
+            background-color: #363636;
+            color: #f5f5f5;
+        }
+
+        .box{
+            display: grid;
+            height: 100%;
+            margin: 10px;
+            grid-template-areas: 
+            "e e e e"
+            "f f g g";
+            grid-template-columns: repeat(2, 20%);
+            grid-template-rows: repeat(2, 30%);
+            gap: 10px;
+        }
+
+        .box div{
+            background-color: #dcdcdc;
+            color: #363636;
+            padding: 5px;
+        }
+
+        .e{grid-area: e;}
+        .f{grid-area: f;}
+        .g{grid-area: g;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div class="box">
+            <div class="e">E</div>
+            <div class="f">F</div>
+            <div class="g">G</div>
+        </div>
+    </div>
+</body>
+</html>
