@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 03</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(4, 20vw);
+            grid-template-rows: repeat(3, 20vh);
+            gap: 15px;
+            grid-template-areas: 
+            "a d g j"
+            "b e h k"
+            "c f i l";
+        }
+
+        .container div{
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 2.3em;
+        }
+
+        .container div:nth-child(odd){
+            background-color: #2e2e2e;
+            color: #f5f5f5;
+        }
+
+        .container div:nth-child(even){
+            background-color: #bdbdbd;
+            color: #1c1c1c;
+        }
+
+        .a{grid-area: a;}
+        .b{grid-area: b;}
+        .c{grid-area: c;}
+        .d{grid-area: d;}
+        .e{grid-area: e;}
+        .f{grid-area: f;}
+        .g{grid-area: g;}
+        .h{grid-area: h;}
+        .i{grid-area: i;}
+        .j{grid-area: j;}
+        .k{grid-area: k;}
+        .l{grid-area: l;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+        <div class="d">4</div>
+        <div class="e">5</div>
+        <div class="f">6</div>
+        <div class="g">7</div>
+        <div class="h">8</div>
+        <div class="i">9</div>
+        <div class="j">10</div>
+        <div class="k">11</div>
+        <div class="l">12</div>
+    </div>
+</body>
+</html>
